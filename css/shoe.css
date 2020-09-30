@@ -299,40 +299,54 @@ p.firma{
 }
 
 @media(max-width:450px){
-    body{
-        height: 100vh;
+    html,body{
+        width: 100%;
+        height: 100%;
         overflow-y: hidden;
     }
     nav{
         position: fixed;
         height: 65px;
         width: 100vw;
-        padding: 0 20px;
+        padding: 10px 20px 0 20px;
         background: white;
-        
+    }
+    body.luz nav{
+        background: rgb(39, 48, 54);
     }
     nav img{
         position: absolute;
-        top: -160%;
+        top: -162%;
         left: 0;
         right: 0;
         height: 54vh;
         width: 100vw;
-        filter: brightness(10) saturate(0);
+        transition: transform 0.8s;
+    }
+    body.luz nav img{
+        transition: 0s;
+    }
+    nav h1{
+        left: 35vw;
     }
     .avance{
         position: absolute;
         top: 92vh;
         left: 22vw;
     }
+    .guia{
+        display: none;
+    }
     .banner{
-        top: 8px;
+        top: 20vh;
         width: 900vw;
-        height: 100vh;
+        height: 80vh;
+        z-index: 21;
+        align-items: flex-start;
     }
     .capa{
-        top: 40px;
-        height: 80vh;
+        top: 0px;
+        height: 70vh;
         width: 100vw;
     }
     #inicio{
@@ -347,7 +361,7 @@ p.firma{
         padding-right: 0vw;
     }
     .card{
-        height: 75vh;
+        height: 70vh;
         width: 80vw;
         justify-content: center;
     }
@@ -370,7 +384,12 @@ p.firma{
         width: 160%;
         height: 100%;
         left: -30%;
-        
+    }
+    .banner .capa:nth-child(2) .card .imgbox img{
+        width: 180%;
+        height: 90%;
+        left: -40%;
+        top: 20px;
     }
     .banner .card .data{
         position: absolute;
@@ -393,6 +412,11 @@ p.firma{
         width: 100%;
         height: 100%;
         top: -30px;
+    }
+    .banner .capa:nth-child(2) .card .data .brand img{
+        width: 90%;
+        height: 90%;
+        top: 10px;
     }
     p.firma{
         display: none;
