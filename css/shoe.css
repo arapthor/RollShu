@@ -316,7 +316,7 @@ p.firma{
     }
     nav img{
         position: absolute;
-        top: -162%;
+        top: -100px;
         left: 0;
         right: 0;
         height: 54vh;
@@ -340,7 +340,7 @@ p.firma{
     .banner{
         top: 22vh;
         width: 900vw;
-        height: 80vh;
+        height: 60vh;
         z-index: 21;
         align-items: flex-start;
     }
