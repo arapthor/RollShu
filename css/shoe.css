@@ -178,12 +178,10 @@ nav span{
  
 }
 .banner .capa:nth-child(5) .card{
-    background: white;
     flex-direction: row; 
     align-items: center;
     justify-content: center;
     background: rgb(44, 44, 44);
-    padding: 0 5vw;
     font-size: 20px;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
 }
@@ -298,4 +296,105 @@ p.firma{
     left: 5%;
     bottom: 10px;
     color: gray;
+}
+
+@media(max-width:450px){
+    body{
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    nav{
+        position: fixed;
+        height: 65px;
+        width: 100vw;
+        padding: 0 20px;
+        background: white;
+        
+    }
+    nav img{
+        position: absolute;
+        top: -160%;
+        left: 0;
+        right: 0;
+        height: 54vh;
+        width: 100vw;
+        filter: brightness(10) saturate(0);
+    }
+    .avance{
+        position: absolute;
+        top: 92vh;
+        left: 22vw;
+    }
+    .banner{
+        top: 8px;
+        width: 900vw;
+        height: 100vh;
+    }
+    .capa{
+        top: 40px;
+        height: 80vh;
+        width: 100vw;
+    }
+    #inicio{
+        width: 100vw;
+        padding-left: 0vw;
+    }
+    #mitad{
+        width: 100vw;
+    }
+    #fin{
+        width: 100vw;
+        padding-right: 0vw;
+    }
+    .card{
+        height: 75vh;
+        width: 80vw;
+        justify-content: center;
+    }
+    .banner .capa:nth-child(5) .card h3 span{
+        font-size: 140px;
+    }
+    .banner .capa:nth-child(5) .card h3 span:nth-child(2){   
+        top: 120px;
+    }
+    .banner .capa:nth-child(5) .card h3 span:nth-child(3){
+        bottom: 50px;
+    }
+
+    .banner .card .imgbox{
+        width: 70%;
+        top: 30px;
+        height: 100%;
+    }
+    .banner .card .imgbox img{
+        width: 160%;
+        height: 100%;
+        left: -30%;
+        
+    }
+    .banner .card .data{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 50%;
+        height: 40%;
+    }
+    .banner .capa:nth-child(2) .card .data,
+    .banner .capa:nth-child(4) .card .data,
+    .banner .capa:nth-child(8) .card .data,
+    .banner .capa:nth-child(9) .card .data{
+        left: 10px;
+    }
+    .banner .card .data .brand{
+        width: 100%;
+        height: 90%;
+    }
+    .banner .card .data .brand img{
+        width: 100%;
+        height: 100%;
+        top: -30px;
+    }
+    p.firma{
+        display: none;
+    }
 }
