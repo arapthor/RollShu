@@ -331,14 +331,14 @@ p.firma{
     }
     .avance{
         position: absolute;
-        top: 92vh;
+        top: 86vh;
         left: 22vw;
     }
     .guia{
         display: none;
     }
     .banner{
-        top: 20vh;
+        top: 22vh;
         width: 900vw;
         height: 80vh;
         z-index: 21;
@@ -346,7 +346,7 @@ p.firma{
     }
     .capa{
         top: 0px;
-        height: 70vh;
+        height: 60vh;
         width: 100vw;
     }
     #inicio{
@@ -361,7 +361,7 @@ p.firma{
         padding-right: 0vw;
     }
     .card{
-        height: 70vh;
+        height: 60vh;
         width: 80vw;
         justify-content: center;
     }
@@ -372,7 +372,7 @@ p.firma{
         top: 120px;
     }
     .banner .capa:nth-child(5) .card h3 span:nth-child(3){
-        bottom: 50px;
+        bottom: 25px;
     }
 
     .banner .card .imgbox{
