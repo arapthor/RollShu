@@ -307,9 +307,9 @@ p.firma{
     }
     nav{
         position: fixed;
-        height: 65px;
+        height: 80px;
         width: 100vw;
-        padding: 10px 20px 0 20px;
+        padding: 10px 20px 15px 20px;
         background: white;
     }
     body.luz nav{
